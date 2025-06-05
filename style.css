@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* Main hero section */
+.hero {
+  height: 100vh;
+  background: #000;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.9);
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Profile image container */
+.pic-frame {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #1db954;
+  box-shadow: 0 0 25px #1db954;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  background: #000;
+}
+
+/* Profile image */
+.artist-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Name & tagline */
+.artist-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  width: 52px;
+  height: 52px;
+  background: #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+/*hover glow */
+.btn.spotify:hover {
+  box-shadow: 0 0 12px #1db954, 0 0 20px #1db954;
+  transform: scale(1.15);
+}
+
+.btn.audiomack:hover {
+  box-shadow: 0 0 12px #ff8800, 0 0 20px #ff8800;
+  transform: scale(1.15);
+}
+
+.btn.instagram:hover {
+  box-shadow: 0 0 12px #d62976, 0 0 20px #feda75;
+  transform: scale(1.15) rotate(5deg);
+}
+
+.btn.tiktok:hover {
+  box-shadow: 0 0 12px #fff, 0 0 20px #0ff;
+  transform: scale(1.15);
+}
+
+.btn.email:hover {
+  box-shadow: 0 0 12px #aaa, 0 0 20px #ddd;
+  transform: scale(1.15);
+}
+
+/* Cards section */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background: #121212;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+.album-art {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ff8800;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.card-link:hover .card {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #ff8800;
+}
+
+.album-art {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
